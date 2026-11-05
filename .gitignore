@@ -1,0 +1,33 @@
+# 파이썬
+__pycache__/
+*.py[cod]
+*.bak
+
+# 빌드 결과물
+build_nuitka/
+dist/
+nuitka-crash-report.xml
+
+# 개인 설정·운영 기록 (config.json 은 첫 실행 때 기본값으로 자동 생성된다)
+/config.json
+/cache/
+/logs/
+/backups/
+/inbox/
+
+# 제3자 저작물: 저장소에 넣지 않고 공식 배포처에서 받는다
+/models/
+/offline_wheels/
+*.onnx
+*.exe
+*.whl
+*.dll
+*.pyd
+
+# 엔진 비교용 음성 샘플 (Windows 음성·Chatterbox 합성물)
+/비교샘플/
+
+# 내부 문서·작업 기록
+/docs/Microsoft_음성_라이선스_문의서.md
+.claude/
+Thumbs.db

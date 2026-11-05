@@ -1,0 +1,70 @@
+TTS 자동 방송 송출 시스템 라이선스
+Copyright (c) 2026 최승훈 (Choi Seung-hun, gwchoi96@gmail.com). All rights reserved.
+
+이 소프트웨어(소스 코드, 실행 파일, 빌드·설치 스크립트, 문서, 안내문 양식, 차임벨·경보음 음원,
+아이콘 등 저작자의 저작물 일체)의 저작권은 저작자에게 있습니다. 소스 코드를 공개하지만
+오픈소스 라이선스는 아닙니다. 아래에서 허용하지 않은 권리는 모두 저작자에게 있습니다.
+
+1. 허용되는 것
+   - 공식 배포처에서 소스 코드를 내려받는 것
+   - 소스 코드를 열람하고, 수정하지 않은 상태로 본인 PC에서 직접 빌드·실행하는 것
+   - 프로그램을 LICENSE-EULA.txt 의 조건에 따라 안내 방송 송출 목적으로 사용하는 것
+   - 프로그램이 제공하는 방법으로 설정, 예약, 안내문 양식, 발음 사전, 사용자 차임을 바꾸고,
+     본인 사용을 위해 설명서에 안내된 방식으로 엔진 플러그인을 추가하는 것
+   - GitHub 서비스 약관이 보장하는 범위에서 GitHub 안에서 열람하고 포크하는 것
+     (포크는 원본 그대로의 사본에 대해서만 허용되며, 이 라이선스의 금지 사항은 포크에도 적용됩니다)
+   - 공식 배포처 링크를 공유하는 것
+     공식 배포처: https://github.com/seunghunchoi-dev/tts-broadcast
+
+2. 저작자의 사전 서면 허락 없이 금지되는 것
+   - 소스 코드 또는 실행 파일을 수정·변경·번역하거나 2차적 저작물을 만드는 것
+   - 원본 또는 수정본을 다른 웹사이트·커뮤니티·저장소 등에 다시 올리거나 배포·판매·대여하는 것
+   - 실행 파일을 역컴파일·역설계하는 것
+   - 저작자 표시와 이 라이선스 문구를 지우거나 바꾸는 것
+
+3. 제3자 구성 요소
+   함께 쓰이는 제3자 구성 요소(Python, PySide6/Qt, ONNX Runtime, NumPy, libsndfile, Supertonic 등)는
+   각자의 라이선스를 따르며, 이 라이선스는 그 권리를 제한하지 않습니다. LGPL 구성 요소를 교체하거나
+   수정하고 그 디버깅을 위해 역설계하는 권리도 그대로 보장됩니다.
+   자세한 내용은 THIRD_PARTY_NOTICES.md 를 참고하세요.
+
+4. Supertonic 3 음성 모델
+   음성 모델은 이 저장소에 들어 있지 않으며 Supertone Inc.의 BigScience Open RAIL-M 라이선스를
+   따릅니다. 모델을 사용하는 사람은 그 라이선스의 사용 제한(Attachment A)을 지켜야 합니다.
+   이 프로그램은 Supertone Inc.의 공식 제품이 아니며 그 후원이나 보증을 받지 않습니다.
+
+5. 보증의 부인과 책임의 제한
+   이 소프트웨어는 "있는 그대로" 제공되며 어떠한 보증도 하지 않습니다. 안내 방송의 내용과 송출에
+   대한 책임은 사용자에게 있습니다. 법률이 허용하는 최대 범위에서, 사용으로 인해 생긴 손해에 대해
+   저작자는 책임지지 않습니다.
+
+허락이 필요하면 gwchoi96@gmail.com 으로 문의하세요.
+
+----------------------------------------------------------------------
+
+TTS Broadcast System License
+Copyright (c) 2026 Choi Seung-hun. All rights reserved.
+
+The source code is publicly available, but this is NOT an open source license.
+You may download the source code from the official repository, read it, build and run it
+unmodified on your own PC, use the program for announcements under LICENSE-EULA.txt, change
+its settings, schedules, templates, pronunciations and custom chimes through the means it
+provides, add engine plugins for your own use as documented, view and fork it on GitHub as
+guaranteed by the GitHub Terms of Service, and share links to the official repository.
+Official repository: https://github.com/seunghunchoi-dev/tts-broadcast
+
+Without prior written permission from the author you may NOT modify, translate or create
+derivative works of the source code or executables; redistribute, sell or rent the original
+or modified versions; decompile or reverse engineer the executables; or remove the
+copyright and license notices. These restrictions also apply to forks.
+
+Third-party components keep their own licenses, and this license does not limit the rights
+they grant, including LGPL rights to replace, modify and debug LGPL components. See
+THIRD_PARTY_NOTICES.md. The Supertonic 3 model is not included in this repository and is
+subject to the BigScience Open RAIL-M license, including its use restrictions (Attachment A).
+This program is not affiliated with, sponsored by or endorsed by Supertone Inc.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. To the maximum extent
+permitted by law, the author is not liable for any damages arising from its use.
+
+The Korean text above takes precedence. For permissions: gwchoi96@gmail.com

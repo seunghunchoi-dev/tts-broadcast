@@ -1,0 +1,29 @@
+[
+  {
+    "id": "lunch",
+    "enabled": false,
+    "name": "점심 안내(예시)",
+    "text": "점심시간입니다. 맛있는 식사 하시기 바랍니다.",
+    "type": "time",
+    "time": "12:00",
+    "days": [0, 1, 2, 3, 4],
+    "date": "",
+    "priority": 5,
+    "repeat": 2,
+    "chime": true
+  },
+  {
+    "id": "hourly",
+    "enabled": false,
+    "name": "정시 안내(예시)",
+    "text": "정시 안내 방송입니다.",
+    "type": "interval",
+    "interval_min": 60,
+    "start": "09:00",
+    "end": "18:00",
+    "days": [],
+    "priority": 5,
+    "repeat": 1,
+    "chime": true
+  }
+]
