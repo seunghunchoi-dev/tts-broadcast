@@ -19,6 +19,8 @@ $stamp    = Get-Date -Format 'yyyyMMdd_HHmm'
 $exeName  = 'TTS방송.exe'
 
 Write-Host "`n[1/4] Nuitka 컴파일 시작 (10~30분 소요, 최초 1회 MinGW 자동 다운로드)..." -ForegroundColor Cyan
+# 이전 빌드에서 남은 파일이 배포본에 섞이지 않게 비운다
+if (Test-Path $distDir) { Remove-Item -Recurse -Force $distDir }
 
 $nuitkaArgs = @(
     '-m', 'nuitka',
@@ -66,6 +68,12 @@ foreach ($f in $payload) {
         Write-Host "    + $f"
     }
 }
+# 내부 문의서 초안은 배포하지 않는다
+Remove-Item (Join-Path $distDir 'docs\Microsoft_음성_라이선스_문의서.md') -Force -ErrorAction SilentlyContinue
+# 패키지 라이선스 원문 동봉
+& python (Join-Path $root 'tools\collect_licenses.py') (Join-Path $distDir 'licenses\third_party')
+if ($LASTEXITCODE -ne 0) { throw "라이선스 수집 실패 (exit $LASTEXITCODE)" }
+Remove-Item (Join-Path $distDir 'tools\collect_licenses.py') -Force
 # 감시 폴더는 비운 채로 포함
 foreach ($sub in @('inbox\done','inbox\error')) {
     $p = Join-Path $distDir $sub
@@ -91,3 +99,4 @@ Write-Host "`n완료!" -ForegroundColor Green
 Write-Host "  실행 파일 : $release\$exeName"
 Write-Host "  배포 zip  : $zip"
 Write-Host "  (이 폴더째 어느 PC 에나 복사하면 Python 설치 없이 실행됩니다)"
+Write-Host "  설치 파일 : ISCC.exe /DMySource=`"$release`" installer.iss"

@@ -11,7 +11,10 @@
 #define MyAppVersion "1.0.0"
 #define MyAppPublisher "최승훈"
 #define MyAppExeName "TTS방송.exe"
-#define MySource "dist\TTS방송_보호_20261101_1550"
+; 배포 폴더는 ISCC.exe /DMySource="dist\폴더" 로 지정한다
+#ifndef MySource
+  #error ISCC.exe /DMySource="배포 폴더" 로 실행하세요
+#endif
 
 [Setup]
 AppId={{B7E1B2C3-4D5E-6F70-8A9B-0C1D2E3F4A5B}
@@ -26,7 +29,7 @@ DisableProgramGroupPage=yes
 PrivilegesRequired=lowest
 LicenseFile={#MySource}\LICENSE-EULA.txt
 OutputDir=dist
-OutputBaseFilename=TTS방송_Setup_{#MyAppVersion}
+OutputBaseFilename=TTS-Broadcast_Setup_{#MyAppVersion}
 Compression=lzma2/max
 SolidCompression=yes
 WizardStyle=modern

@@ -16,6 +16,8 @@ GitHub 저장소에는 소스 코드만 있으며, 표의 모델·패키지 파�
 | Python | Python Software Foundation | PSF License | `offline_wheels/python-3.11.9-amd64.exe` |
 | Qt for Python (PySide6-Essentials 6.12.0, shiboken6 6.12.0) | The Qt Company Ltd. | LGPL-3.0 (LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only 중 LGPL-3.0 선택) | `offline_wheels/` |
 
+패키지별 라이선스 원문은 설치 폴더의 `licenses/third_party/` 에 있으며, flatbuffers 에는 `licenses/Apache-2.0.txt` 가 적용됩니다.
+
 빌드한 실행 파일에는 다음 구성요소도 들어갑니다: Pillow(MIT-CMU), certifi(MPL-2.0), charset-normalizer(MIT), Brotli(MIT), Tcl/Tk(TCL 라이선스), pywin32(PSF), Microsoft Visual C++ 런타임(Microsoft 재배포 조건). 실행 파일은 Nuitka로 컴파일하며, 포함되는 Nuitka 런타임에는 AGPL-3.0과 Nuitka Runtime Library Exception이 적용됩니다.
 
 ## Qt for Python (PySide6) — LGPL-3.0
@@ -30,6 +32,16 @@ GNU Lesser General Public License v3 (LGPL-3.0) 의 적용을 받습니다. Copy
   폐쇄망 등으로 받을 수 없는 경우 요청 시 해당 버전의 소스 코드를 제공합니다.
 - 이 제품의 사용 조건은 사용자가 위 라이브러리를 수정해 사용하거나 그 수정의 디버깅을 위해
   리버스 엔지니어링하는 것을 제한하지 않습니다.
+
+## libsndfile — LGPL-2.1
+
+`_soundfile_data/libsndfile_x64.dll` 은 python-soundfile 이 배포한 libsndfile 1.2.2 빌드이며, 수정하지 않았습니다.
+이 파일에는 mpg123(LGPL-2.1), LAME(LGPL-2 이상), FLAC·Ogg·Vorbis·Opus(BSD-3-Clause)가 함께 들어 있습니다.
+
+- 라이선스 원문: `licenses/LGPL-2.1.txt`, 구성요소별 저작권 표시: `licenses/third_party/soundfile-*/`
+- 사용자는 이 DLL을 인터페이스가 호환되는 다른 빌드로 교체할 수 있습니다.
+- 소스 코드: https://github.com/libsndfile/libsndfile , https://www.mpg123.de/ , https://lame.sourceforge.io/
+- 받을 수 없는 경우 이 제품을 받은 날부터 3년 동안 gwchoi96@gmail.com 으로 요청하면 해당 소스 코드를 제공합니다.
 
 ## Supertonic 3 모델 사용 제한
 

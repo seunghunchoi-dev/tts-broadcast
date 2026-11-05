@@ -277,7 +277,7 @@ assets\chimes\              차임벨 WAV (자체 합성, 교체 가능)
   api_server.py             HTTP API + 웹 페이지
   qt_gui.py                 운영자 화면 (Qt / PySide6)
   gui.py                    예비 운영자 화면 (tkinter, PySide6 가 없을 때 자동 사용)
-licenses\                   LGPL-3.0 / GPL-3.0 / LGPL-2.1 원문
+licenses\                   LGPL-3.0 / GPL-3.0 / LGPL-2.1 / Apache-2.0 원문
 plugins\                    사용자 엔진 플러그인
 inbox\                      감시 폴더 (done / error)
 logs\                       일자별 방송 로그 (90일 보관)
